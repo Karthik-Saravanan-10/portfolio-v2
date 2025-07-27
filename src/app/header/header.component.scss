@@ -1,0 +1,19 @@
+.container {
+    @apply flex justify-between p-4 px-10 items-center;
+
+    h1{
+        @apply font-bold;
+    }
+
+    .nav {
+        @apply flex gap-[42px] uppercase opacity-70;
+    }
+
+    .contact-btn {
+        @apply flex gap-1 items-center border border-solid border-[#0284C7] rounded-xl text-[#0284C7] px-2 py-1 text-sm cursor-pointer;
+
+        img {
+            @apply w-5 h-5;
+        }
+    }
+}

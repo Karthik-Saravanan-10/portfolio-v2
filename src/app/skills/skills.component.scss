@@ -1,0 +1,36 @@
+.scroll-container {
+    @apply overflow-hidden whitespace-nowrap bg-transparent mt-20 mx-28;
+
+    .scroll-content {
+        @apply inline-flex gap-28;
+        animation: scroll-left-to-right 20s linear infinite;
+
+        img {
+            @apply w-14 h-14;
+        }
+    }
+}
+
+.main-container {
+    @apply flex flex-col items-center mb-10;
+
+    h1 {
+        @apply text-[#334155] text-[40px];
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .scroll-container {
+        @apply w-full;
+    }
+}
+
+@keyframes scroll-left-to-right {
+    0% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        transform: translateX(-10%);
+    }
+}

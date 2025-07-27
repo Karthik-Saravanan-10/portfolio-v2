@@ -1,0 +1,50 @@
+.main-container {
+    .bg-image {
+        @apply w-full;
+    }
+
+    .container {
+        @apply bg-main-blue flex flex-col gap-2 justify-center items-center text-white;
+
+        h4 {
+            @apply text-[40px];
+        }
+
+        .education-details {
+            @apply flex gap-3 mt-3 flex-wrap;
+
+            .education {
+                @apply md:w-[435px] bg-white py-3 px-5 rounded-xl;
+
+                h5 {
+                    @apply text-[#334155] text-[24px];
+                }
+
+                .year {
+                    @apply text-[#6B7280] text-base opacity-75;
+                }
+
+                .course {
+                    @apply text-[#6B7280] text-base;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main-container {
+        .bg-image:first-child {
+            @apply mb-[-2px];
+        }
+        .bg-image:last-child {
+            @apply mt-[-2px];
+        }
+    }
+
+    .container {
+        .education-details {
+            @apply px-4;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+button {
+    @apply cursor-pointer;
+}
+
+.main-container {
+    @apply flex justify-around mt-10 px-4 items-center;
+
+    .left {
+        @apply flex flex-col;
+
+        h4 {
+            @apply font-bold text-main-blue;
+        }
+
+        h1 {
+            @apply text-[#334155] font-bold text-[40px]
+        }
+
+        .description {
+            @apply text-[#6B7280] md:w-[498px];
+        }
+
+        .contact-btn {
+            @apply flex gap-5 my-5;
+
+            .hire-me-btn {
+                @apply bg-main-blue rounded-[50px] py-1 px-5 flex gap-1 text-white items-center;
+                img{
+                    @apply w-5 h-5;
+                }
+            }
+
+            .cv {
+                @apply text-main-blue rounded-[50px] py-1 px-5 border border-main-blue ;
+            }
+        }
+
+        .social-platform{
+            @apply flex gap-7;
+            img{
+                @apply cursor-pointer;
+            }
+        }
+    }
+
+    .right{
+        @apply border border-[#3F3D56] rounded-full overflow-hidden;
+        img{
+            @apply ml-6;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main-container{
+        @apply text-center flex-col gap-12;
+        .left{
+            @apply items-center;
+        }
+    }
+}

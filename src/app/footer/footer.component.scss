@@ -1,0 +1,6 @@
+.main-container{
+    @apply bg-main-blue text-white flex flex-col py-4 items-center;
+    h2{
+        @apply text-[30px];
+    }
+}
